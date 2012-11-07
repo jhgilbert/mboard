@@ -1,5 +1,6 @@
 <% @posts = Post.all %>
 <% @posts.each do |p| %>
+<p><%= p.created_at.strftime("%H:%M %d %b %Y") %>
 <p>From: <%= p.name %>
 <p><%= p.content %>
 <% end %>
