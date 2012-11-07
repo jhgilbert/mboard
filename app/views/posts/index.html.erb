@@ -1,0 +1,5 @@
+<% @posts = Post.all %>
+<% @posts.each do |p| %>
+<p>From: <%= p.name %>
+<p><%= p.content %>
+<% end %>

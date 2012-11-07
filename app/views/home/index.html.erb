@@ -3,6 +3,7 @@
     <a class="brand" href="#">Jen's Really Bad App</a>
     <ul class="nav">
       <li class="active"><a href="#">Home</a></li>
+	  <li class="active"><%= link_to "New Post", new_post_path, :method => :get %></li>
   	</ul>
     <ul class="nav">
 	  <li class="pull-right"><%= current_user.email %></li>
